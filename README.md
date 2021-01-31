@@ -1,2 +1,2 @@
 # drakensang-calculators
-Website dedicated for calculators in MMORPG game Drakensang Online
+Website dedicated to calculators for MMORPG game Drakensang Online

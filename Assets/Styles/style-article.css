@@ -90,7 +90,6 @@ th{
     text-align: center;
     padding: 10px;
 }
-
 ::-webkit-scrollbar{
     background-color: rgb(51, 51, 51);
 }
@@ -101,3 +100,4 @@ th{
     background-color: rgb(138, 60, 8);
     border-radius: 50px;
 }
+
