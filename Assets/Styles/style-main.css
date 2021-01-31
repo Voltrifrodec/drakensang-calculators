@@ -1,0 +1,139 @@
+html{
+
+    background-color: black;
+    color: white;
+    margin: 20px 10%;
+    border: 3px outset rgb(197, 143, 25);
+    /* border: 10px outset rgb(197, 143, 25); */
+    
+}
+
+::-webkit-scrollbar{
+    background-color: rgb(51, 51, 51);
+}
+::-webkit-scrollbar-button{
+    background-color:rgb(26, 26, 26);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(138, 60, 8);
+    border-radius: 50px;
+}
+
+.header{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(197, 143, 25);
+}
+
+a:hover{
+    transition: 0.5s;
+    /* font-size: 20px; */
+    color: rgb(252, 213, 129);
+}
+
+.list-of-calc .u1{
+    text-decoration: none;
+    background-color: rgb(35, 190, 35);
+}
+
+.list-of-calc .u2{
+    text-decoration: none;
+    background-color: orange;
+    color: black;
+}
+
+.list-of-calc .u3{
+    text-decoration: none;
+    background-color: red;
+}
+
+.list-of-calc .u4{
+    text-decoration: none;
+    background-color: cyan;
+    color: black;
+}
+
+.list-of-calc .u5{
+    text-decoration: none;
+    background-color: gray;
+}
+
+.list-of-calc table,th,td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.calc-table div{
+    border: 3px solid rgb(87, 92, 97);
+    border-collapse: collapse;
+}
+
+.grid-fix{
+    text-align: right;
+    padding: 10px 20px;
+}
+
+.grid-fix a{
+    color: white;
+}
+.grid-fix .sub-header a{
+    font-size: 18px;
+    color:rgb(197, 143, 25);
+}
+.grid-fix .version{
+    bottom: 0;
+    float: left;
+    margin: -10;
+}
+
+.grid-fix img{
+    width: 50px;
+    /* margin-right: 60%; */
+    float: left;
+    /* display: inline-block; */
+    /* border: 3px solid black; */
+    /* vertical-align: middle; */
+}
+.calc-table{
+    display: grid;
+    grid-template-columns: auto auto auto; /** Left - Center - Right*/
+    padding: 15px;
+}
+th{
+    padding: 10px 0;
+}
+td{
+    padding: 0 10px;
+}
+.bIm{
+    color: red;
+}
+.calc-table grid-fix{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.links a{
+    text-decoration: underline;
+    color: rgb(41, 44, 241);
+}
+.desc-table{
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-top: 20px;
+
+    /* width: 100%; */
+}
+
+.footer{
+    text-align: center;
+    margin: 5% 0px;
+}
