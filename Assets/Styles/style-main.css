@@ -133,7 +133,15 @@ td{
     /* width: 100%; */
 }
 
-.footer{
+/* .footer{
     text-align: center;
     margin: 5% 0px;
+} */
+
+.footer{
+    width: 100%;
+    clear: both;
+    height: 20px;
+    padding: 15% 0px 10px 0px;
+    text-align: center;
 }

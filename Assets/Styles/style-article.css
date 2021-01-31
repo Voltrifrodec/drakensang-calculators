@@ -1,0 +1,92 @@
+html{
+
+    background-color: black;
+    color: white;
+    margin: 20px 10%;
+    border: 3px outset rgb(197, 143, 25);
+    /* border: 10px outset rgb(197, 143, 25); */
+    padding: 20px 10px;
+}
+
+.header{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(197, 143, 25);
+}
+
+a:hover{
+    transition: 0.5s;
+    /* font-size: 20px; */
+    color: rgb(252, 213, 129);
+}
+
+.table-head{
+    color: red;
+}
+
+table,th,td{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+.table-padd-fix{
+    padding: 0px 10%;
+}
+.table-rarity-window, .table-melt-window{
+    text-align: center;
+    display: inline-block;
+    clear: both;
+    /* margin: 0px 30px; */
+}
+/* .table-rarity-window{
+    grid-row: 0;
+    grid-column: 1;
+}
+.table-melt-window{
+    grid-row: 0;
+    grid-column: 2;
+} */
+
+    /* padding: 20px;
+    clear: both;
+    box-shadow: 1px 1px 1px #999;
+    text-align: center;
+    overflow:hidden; */
+
+th{
+    padding: 10px;
+}
+.tables{
+    width: 100%;
+    /* border: 1px solid red; */
+
+    /* display: grid; */
+
+/* footer{
+    width: 100%;
+    text-align: center;
+    margin: 5% 0px;
+    bottom: 0;
+    position: fixed;
+} */
+}
+.footer{
+    width: 100%;
+    clear: both;
+    height: 20px;
+    padding: 15% 0px 10px 0px;
+    text-align: center;
+}
+
+.td-center{
+    text-align: center;
+}
+
+#result,.calculator-window{
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,101 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rune dust calculator</title>
+        <link rel="stylesheet" href="Styles/style-article.css">
+    </head>
+    <body>
+        <div class="nav">
+            <a href="../main.html">Back to Main page</a>
+        </div>
+        <div class="header">
+            <header>Gem gems calculator</header>
+        </div>
+        <div class="about">
+            <h2><u>How it works</u></h2>
+            <p>In the first input, enter how many gems you want to upgrade, in the second one rarity you have now, and in the last one desired gem rarity. Calculator will then display how much dust you need for upgrade.</p>
+        </div>
+        <div class="calculator-window">
+            <input type="number" name="Count" id="count" min="0" placeholder="Enter count..">
+            <select name="Rarity now" id="rarity-now-sel">
+                <option value="0">Select rarity now..</option>
+                <option value="1">Flawed</option>
+                <option value="2">Splintered</option>
+                <option value="3">Simple</option>
+                <option value="4">Full</option>
+                <option value="5">Polished</option>
+                <option value="6">Radiant</option>
+                <option value="7">Flawless</option>
+                <option value="8">Sacred</option>
+                <option value="9">Royal</option>
+                <option value="10">Trapezoid</option>
+                <option value="11">Refined Trapezoid</option>
+                <option value="12">Brilliant Trapezoid</option>
+                <option value="13">Exquisite Trapezoid</option>
+                <option value="14">Imperial</option>
+                <option value="15">Refined Imperial</option>
+                <option value="16">Brilliant Imperial</option>
+                <option value="17">Exquisite Imperial</option>
+            </select>
+            <select name="Rarity needed" id="rarity-needed-sel">
+                <option value="0">Select rarity now..</option>
+                <option value="1">&nbsp;</option>
+                <option value="2">Splintered</option>
+                <option value="3">Simple</option>
+                <option value="4">Full</option>
+                <option value="5">Polished</option>
+                <option value="6">Radiant</option>
+                <option value="7">Flawless</option>
+                <option value="8">Sacred</option>
+                <option value="9">Royal</option>
+                <option value="10">Trapezoid</option>
+                <option value="11">Refined Trapezoid</option>
+                <option value="12">Brilliant Trapezoid</option>
+                <option value="13">Exquisite Trapezoid</option>
+                <option value="14">Imperial</option>
+                <option value="15">Refined Imperial</option>
+                <option value="16">Brilliant Imperial</option>
+                <option value="17">Exquisite Imperial</option>
+            </select>
+            <select name="Gemy type" id="gem-type">
+                <option value="0">Select gem type..</option>
+                <option value="1">Offensive</option>
+                <option value="2">Deffensive</option>
+            </select>
+            <div class="result-center">
+                <p id="result"></p>
+            </div>
+        </div>
+        <div class="tables">
+            <div class="table-rarity-window">
+                <table id="table-rarity-stats">
+                    <tr>
+                        <th class="table-head">Rarity req</th>
+                        <th>Offensive</th>
+                        <th>Deffensive</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="table-melt-window">
+                <table id="table-melt-stats">
+                    <tr>
+                        <th class="table-head">Melt values</th>
+                        <th>Offensive</th>
+                        <th>Deffensive</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footer">
+            <footer>Created and mantained by V0ltaroo since 2021.</footer>
+            <div>
+                <a href="https://discord.gg/4nEFV6vrfx">Discord server</a> -
+                <a href="../main.html">Main page</a> - 
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </body>
+    <script src="Scripts/Constantine_v1-3-8.js"></script>
+    <script src="Scripts/rune-dust-calc-engine.js"></script>
+</html>
