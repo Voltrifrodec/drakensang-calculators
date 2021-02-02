@@ -1,0 +1,110 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Styles/style-article.css">
+        <title>Critical Value Calculator (VDS)</title>
+    </head>
+    <body>
+        <div class="nav">
+            <a href="../main.html">Back to Main page</a>
+        </div>
+        <div class="header">
+            <header>Critical chance calculator</header>
+        </div>
+        <div class="about">
+            <h2><u>How it works</u></h2>
+            <p>In the first input, enter your current level, in second your critical value. You can find critical value you have by <b>pressing C</b> to open <b>Character</b> window. Calculator will show you critical hit and critical damage on difficulties</p>
+        </div>
+        <div class="input-values">
+            <p>
+                Character level:
+                <input id="char-lvl" type="number" value="0" min="1" max="100" placeholder="Character's level..">
+            </p>
+            <p>
+                Critical value:
+                <input id="crit-val" type="number" min="0" value="0" placeholder="Critical value..">
+            </p>
+            <p id="res-check"></p>
+        </div>
+        <div class="tables">
+            <div class="table-result-window">
+                <table id="table-result">
+                    <tr>
+                        <th>Level</th>
+                        <th id="cch">Critical chance</th>
+                        <th id="ch">Critical hit</th>
+                    </tr>
+                    <tr>
+                        <td id="res_1_1">100</td>
+                        <td id="res_1_2">-</td>
+                        <td id="res_1_3">-</td>
+                    </tr>
+                    <tr>
+                        <td id="res_2_1">105</td>
+                        <td id="res_2_2">-</td>
+                        <td id="res_2_3">-</td>
+                    </tr>
+                    <tr>
+                        <td id="res_3_1">110</td>
+                        <td id="res_3_2">-</td>
+                        <td id="res_3_3">-</td>
+                    </tr>
+                    <tr>
+                        <td id="res_4_1">115</td>
+                        <td id="res_4_2">-</td>
+                        <td id="res_4_3">-</td>
+                    </tr>
+                    <tr>
+                        <td id="res_5_1">120</td>
+                        <td id="res_5_2">-</td>
+                        <td id="res_5_3">-</td>
+                    </tr>
+                    <tr>
+                        <td id="res_6_1">125</td>
+                        <td id="res_6_2">-</td>
+                        <td id="res_6_3">-</td>
+                    </tr>
+                    <tr>
+                        <td id="res_7_1">130</td>
+                        <td id="res_7_2">-</td>
+                        <td id="res_7_3">-</td>
+                    </tr>
+                    <tr>
+                        <td id="res_8_1">135</td>
+                        <td id="res_8_2">-</td>
+                        <td id="res_8_3">-</td>
+                    </tr>
+                    <tr>
+                        <td id="res_9_1">140</td>
+                        <td id="res_9_2">-</td>
+                        <td id="res_9_3">-</td>
+                    </tr>
+                    <tr>
+                        <td id="res_10_1">145</td>
+                        <td id="res_10_2">-</td>
+                        <td id="res_10_3">-</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="hint-table-window">
+                <table class="hint-table" id="hint-table">
+                    <tr>
+                        <th>Level</th>
+                        <th>Difficulty</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footer">
+            <footer>Created and maintained by V0ltaroo since 2021.</footer>
+            <div>
+                <a href="https://discord.gg/4nEFV6vrfx">Discord server</a> -
+                <a href="../main.html">Main page</a> - 
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </body>
+    <script src="Scripts/Constantine_v1-3-8.js"></script>
+    <script src="Scripts/crit-value-calc-engine.js"></script>
+</html>
