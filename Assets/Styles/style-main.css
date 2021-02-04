@@ -193,7 +193,7 @@ td{
         background-position: center;
         border: 0px;
         color: rgb(255, 255, 255);
-        background-size: 1% of viewport height;
+        background-size: cover;
     }
     header{
         font-size: 33px;
