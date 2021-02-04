@@ -2,10 +2,32 @@ html{
 
     background-color: black;
     color: white;
-    margin: 20px 10%;
+    margin: 0px 10%;
+    margin-bottom: 0px;
+    padding-bottom: 0;
     border: 3px outset rgb(197, 143, 25);
     /* border: 10px outset rgb(197, 143, 25); */
+
+    /*? max-width na obrázok alebo 100% width do elementu ktorého sa má zmestiť BI - AVhH*/
+    background: url("../Images/background_01.png") no-repeat #000000;
+    /* background-size: cover; */
+    /* background-position: center; */
+    background-size: contain;
+    background-position: auto;
+       
     
+}
+
+body{
+    background-color: rgb(0,0,0,0.7);
+    /*background-image: url("../Images/background_01.png");
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-size: cover; 
+    */
+    margin: 0;
+    max-width: 100%;
+    padding: 50px 50px;
 }
 
 ::-webkit-scrollbar{
@@ -133,6 +155,10 @@ td{
     /* width: 100%; */
 }
 
+.desc-table th{
+    padding: 0px 10px;
+}
+
 /* .footer{
     text-align: center;
     margin: 5% 0px;
@@ -144,4 +170,49 @@ td{
     height: 20px;
     padding: 15% 0px 10px 0px;
     text-align: center;
+}
+
+.bonus-codes .codes-part{
+
+    padding-left: 20px;
+
+}
+
+.bonus-codes .codes-part b, #note{
+
+    color: red;
+
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 1690px) {
+
+    html{
+        margin: 0;
+        background-position: center;
+        border: 0px;
+        color: rgb(255, 255, 255);
+        background-size: 1% of viewport height;
+    }
+    header{
+        font-size: 33px;
+    }
+    body{
+        background-color: rgb(0,0,0,0.7);
+    }
+    .calc-table{
+        display: inline;
+    }
+    .grid-fix{
+        grid-template-columns: 1 / 1;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 1690px) {
+    header{
+        font-size: 50px;
+    }
 }
