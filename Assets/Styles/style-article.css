@@ -2,10 +2,19 @@ html{
 
     background-color: black;
     color: white;
-    margin: 20px 10%;
-    border: 3px outset rgb(197, 143, 25);
+    /* margin: 20px 10%; */
+
     /* border: 10px outset rgb(197, 143, 25); */
+    /* background-position: center; */
+    /* background-color:#000000; */
+
+}
+
+body{
+    margin: 20px 10%;
     padding: 50px 50px;
+    /* background-color: (0,0,0,0.8); */
+    border: 3px outset rgb(197, 143, 25);
 }
 
 .nav{
