@@ -1,0 +1,68 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Styles/style-article.css">
+        <title>Rune dust calculator</title>
+    </head>
+    <body>
+        <div class="nav">
+            <a href="../main.html">Back to Main page</a>
+        </div>
+        <div class="header">
+            <header>Rune dust calculator</header>
+        </div>
+        <div class="about">
+            <h2><u>How it works</u></h2>
+        </div>
+        <div class="calculator-window">
+            <select name="Rune type" id="rune-type-sel">
+                <option value="0">Enter rune type..</option>
+                <option value="1">Offensive</option>
+                <option value="2">Deffensive</option>
+                <option value="3">Other</option>
+            </select>
+            <input type="number" min="0" id="runet0" placeholder="T0 runes..">
+            <input type="number" min="0" id="runet1" placeholder="T1 runes..">
+            <input type="number" min="0" id="runet2" placeholder="T2 runes..">
+            <input type="number" min="0" id="runet3" placeholder="T3 runes..">
+            <!--? T4 nemusím -->
+        </div>
+        <div class="result-center">
+            <p id="result">Result goes here..</p>
+        </div>
+        <div class="tables">
+            <div class="table-rarity-window">
+                <table id="table-rarity-stats">
+                    <tr>
+                        <th class="table-head">Rarity req</th>
+                        <th>Offensive</th>
+                        <th>Deffensive</th>
+                        <th>Other</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="table-melt-window">
+                <table id="table-melt-stats">
+                    <tr>
+                        <th class="table-head">Melt values</th>
+                        <th>Offensive</th>
+                        <th>Deffensive</th>
+                        <th>Other</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footer">
+            <footer>Created and maintained by V0ltaroo since 2021.</footer>
+            <div>
+                <a href="https://discord.gg/4nEFV6vrfx">Discord server</a> -
+                <a href="../main.html">Main page</a> - 
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </body>
+    <script src="Scripts/Constantine_v1-3-8.js"></script>
+    <script src="Scripts/rune-dust-calc-engine.js"></script>
+</html>
