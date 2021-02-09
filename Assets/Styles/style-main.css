@@ -210,7 +210,6 @@ td{
         grid-template-columns: 1 / 1;
         grid-template-rows: 1fr 1fr 1fr;
     }
-
 }
 
 @media screen and (min-width: 500px) and (max-width: 1690px) {
