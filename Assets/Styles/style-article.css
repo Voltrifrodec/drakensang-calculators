@@ -105,6 +105,10 @@ th{
     text-align: center;
 }
 
+#result b{
+    color: rgb(197, 143, 25);
+}
+
 #result,.calculator-window{
     text-align: center;
     padding: 10px;

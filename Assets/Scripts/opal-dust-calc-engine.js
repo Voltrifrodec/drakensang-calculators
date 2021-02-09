@@ -48,9 +48,9 @@ function generateResult(){
             resultInt += requirUpgradeCost[i];
         }
         if(resultInt == 63000){
-            result.innerHTML = `You will need ${numFormatDE(requirUpgradeCost[type] * count)} gem dust for creating such opal(s) and 0 for upgrading them to max tier.`;
-        } else result.innerHTML = `You will need ${numFormatDE(requirUpgradeCost[type] * count)} gem dust for creating such opal(s) and ${numFormatDE(resultInt * count)} for upgrading them to max tier.`;
-        console.log(`Result\n\nDust needed for creation: ${numFormatDE(requirUpgradeCost[type])}\nDust needed for upgrade to max: ${numFormatDE(resultInt * count)}`);
+            result.innerHTML = `You will need <b>${numFormatDE(requirUpgradeCost[type] * count)}</b> gem dust for creating such opal(s) and <b>0</b> for upgrading them to max tier.`;
+        } else result.innerHTML = `You will need <b>${numFormatDE(requirUpgradeCost[type] * count)}</b> gem dust for creating such opal(s) and <b>${numFormatDE(resultInt * count)}</b> for upgrading them to max tier.`;
+        console.log(`Result\n\nDust needed for creation: <b>${numFormatDE(requirUpgradeCost[type])}\nDust needed for upgrade to max: ${numFormatDE(resultInt * count)}`);
         resultInt = 0; resultStr = 0;
     }
 
