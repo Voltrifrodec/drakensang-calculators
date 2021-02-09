@@ -52,6 +52,9 @@ table,th,td{
 .table-padd-fix{
     padding: 0px 10%;
 }
+#center-fix{
+    padding: 0px 10px;
+}
 .table-result-window, .hint-table-window, .table-rarity-window, .table-melt-window{
     text-align: center;
     display: inline-block;
