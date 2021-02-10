@@ -127,3 +127,11 @@ th{
 .hint-table-window{
     padding: 0px 30px;
 }
+#counter{
+    float: right;
+}
+#pocitadlo{
+    width: 150px;
+    height: 20px;
+    margin-top: -10px;
+}
