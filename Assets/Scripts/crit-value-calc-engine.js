@@ -36,17 +36,17 @@ function generateResult(){
         let notation01 = (crit * array1[level + mod] * 100).toFixed(2);
         let notation02 = (crit * array2[level + mod] * 100).toFixed(2);
         
-        let levelTD = []
+        let levelTD = [];
             levelTD[i] = getID('res_' + i + '_1');
             levelTD[i].innerHTML = level + mod;
         
-        let crit1TD = []
+        let crit1TD = [];
             crit1TD[i] = getID('res_' + i + '_2');
             if(notation01 >= 80){
                 crit1TD[i].innerHTML = '80%';
             } else crit1TD[i].innerHTML = `${notation01}%`;
         
-        let crit2TD = []
+        let crit2TD = [];
             crit2TD[i] = getID('res_' + i + '_3');
             if(notation02 >= 500){
                 crit2TD[i].innerHTML = '500%';

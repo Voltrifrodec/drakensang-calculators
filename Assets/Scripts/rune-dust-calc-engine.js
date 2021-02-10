@@ -15,6 +15,15 @@ var melt_rarity_oth = [125,344,688,1156,1750];
 var table01 = getID('table-rarity-stats');
 var table02 = getID('table-melt-stats');
 var result = getID('result');
+var result_long = getID('result-long');
+
+window.onload = () => {
+
+    generateTables(table01,requir_rarity_off,requir_rarity_deff,requir_rarity_oth);
+    generateTables(table02,melt_rarity_off,melt_rarity_deff,melt_rarity_oth);
+}
+
+window.onchange = () => generateResult();
 
 function generateTables(table,array1,array2,array3){
 
@@ -37,7 +46,9 @@ function generateTables(table,array1,array2,array3){
     
 }
 
-var resultNum = 0;
+var resultNum1 = 0;
+var resultNum2 = 0;
+var resultNum3 = 0;
 
 function generateResult(){
 
@@ -51,8 +62,13 @@ function generateResult(){
     if(runeT2 == NaN) runeT2 = 0;
     if(runeT3 == null) runeT3 = 0;
     
-
-    var type = (getID('rune-type-sel').value);
+    
+    
+    console.log('Offensive rune dust ->' + resultNum1);
+    console.log('Deffensive rune dust -> ' + resultNum2);
+    console.log('Other rune dust ->' + resultNum3);
+    
+    var type = parseInt(getID('rune-type-sel').value);
     switch(type){
         case 0:
         {
@@ -61,16 +77,29 @@ function generateResult(){
         }
         case 1:
         {
-            result += (runeT0 * requirROff_count) + (runeT1 * (requirROff_count - 3126)) + (runeT2 * (requirROff_count - 11722)) + (runeT3 * (requirROff_count - 28910));
-            result.innerHTML = 'You will need ' + result + ' rune dust for upgrade your runes.';
+            resultNum1 = (runeT0 * requirROff_count) + (runeT1 * (requirROff_count - 3126)) + (runeT2 * (requirROff_count - 11722)) + (runeT3 * (requirROff_count - 28910));
+            // result += (runeT0 * requirROff_count) + (runeT1 * (requirROff_count - 3126)) + (runeT2 * (requirROff_count - 11722)) + (runeT3 * (requirROff_count - 28910));
+            result.innerHTML = 'You will need <b>' + numFormatDE(resultNum1) + '</b> rune dust for upgrade your runes.';
+            result_long.innerHTML = `For t0 - t4 runes you will need <b>${numFormatDE(runeT0 * requirROff_count)}</b> rune dust, for t1 - t4 <b>${numFormatDE(runeT1 * (requirROff_count - 3126))}</b> rune dust, for t2 - t4 <b>${numFormatDE(runeT2 * (requirROff_count - 11722))}</b> rune dust and for t3 - t4 <b>${numFormatDE(runeT3 * (requirROff_count - 28910))}</b> rune dust.`;
             break;
         }
         case 2:
         {
-            result += (runeT0 * requirRDeff_count) + (runeT1 * (requirRDeff_count - 2500)) + (runeT2 * (requirRDeff_count - 7376)) + (runeT3 * (requirRDeff_count - 21126));
-            result.innerHTML = 'You will need ' + result + ' rune dust for upgrade your runes.';
+            resultNum2 = (runeT0 * requirRDeff_count) + (runeT1 * (requirRDeff_count - 2500)) + (runeT2 * (requirRDeff_count - 9376)) + (runeT3 * (requirRDeff_count - 23126));
+            // result += (runeT0 * requirRDeff_count) + (runeT1 * (requirRDeff_count - 2500)) + (runeT2 * (requirRDeff_count - 7376)) + (runeT3 * (requirRDeff_count - 21126));
+            result.innerHTML = 'You will need <b>' + numFormatDE(resultNum2) + '</b> rune dust for upgrade your runes.';
+            result_long.innerHTML = `For t0 - t4 runes you will need <b>${numFormatDE(runeT0 * requirRDeff_count)}<b> rune dust, for t1 - t4 <b>${numFormatDE(runeT1 * (requirRDeff_count - 2500))}</b> rune dust, for t2 - t4 <b>${numFormatDE(runeT2 * (requirRDeff_count - 9376))}</b> rune dust and for t3 - t4 <b>${numFormatDE(runeT3 * (requirRDeff_count - 23126))}</b> rune dust.`;
             break;
         }
+        case 3:
+        {
+            resultNum3 = (runeT0 * requirROth_count) + (runeT1 * (requirROth_count - 250)) + (runeT2 * (requirROth_count - 938)) + (runeT3 * (requirROth_count - 2313));
+            // result += (runeT0 * requirRDeff_count) + (runeT1 * (requirRDeff_count - 2500)) + (runeT2 * (requirRDeff_count - 7376)) + (runeT3 * (requirRDeff_count - 21126));
+            result.innerHTML = 'You will need <b>' + numFormatDE(resultNum3) + '</b> rune dust for upgrade your runes.';
+            result_long.innerHTML = `For t0 - t4 runes you will need <b>${numFormatDE(runeT0 * requirROth_count)}<b> rune dust, for t1 - t4 <b>${numFormatDE(runeT1 * (requirROth_count - 250))}</b> rune dust, for t2 - t4 <b>${numFormatDE(runeT2 * (requirROth_count - 938))}</b> rune dust and for t3 - t4 <b>${numFormatDE(runeT3 * (requirROth_count - 2313))}</b> rune dust.`;
+            break;
+        }
+        
         default:
         {
             console.log('Unknown type!');
@@ -78,12 +107,10 @@ function generateResult(){
         }
     }
 
+    runeT0 = 0;
+    runeT1 = 0;
+    runeT2 = 0;
+    runeT3 = 0;
+
 }
 
-window.onload = () => {
-
-    generateTables(table01,requir_rarity_off,requir_rarity_deff,requir_rarity_oth);
-    generateTables(table02,melt_rarity_off,melt_rarity_deff,melt_rarity_oth);
-}
-
-window.onchange = () => generateResult();

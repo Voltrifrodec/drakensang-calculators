@@ -15,6 +15,7 @@
         </div>
         <div class="about">
             <h2><u>How it works</u></h2>
+            <p>Select rune type and how much runes you have from each tier (tier4 does not count, because it's highest obviously) and calculator will show you how much rune dust you will need for upgrading to max tier totally.</p>
         </div>
         <div class="calculator-window">
             <select name="Rune type" id="rune-type-sel">
@@ -23,14 +24,15 @@
                 <option value="2">Deffensive</option>
                 <option value="3">Other</option>
             </select>
-            <input type="number" min="0" id="rune0" placeholder="T0 runes..">
-            <input type="number" min="0" id="rune1" placeholder="T1 runes..">
-            <input type="number" min="0" id="rune2" placeholder="T2 runes..">
-            <input type="number" min="0" id="rune3" placeholder="T3 runes..">
+            <input type="number" min="0" id="rune0" placeholder="T0 runes.." value="0">
+            <input type="number" min="0" id="rune1" placeholder="T1 runes.." value="0">
+            <input type="number" min="0" id="rune2" placeholder="T2 runes.." value="0">
+            <input type="number" min="0" id="rune3" placeholder="T3 runes.." value="0">
             <!--? T4 nemusím -->
         </div>
         <div class="result-center">
             <p id="result">Result goes here..</p>
+            <p id="result-long">Description goes here..</p>
         </div>
         <div class="tables">
             <div class="table-rarity-window">

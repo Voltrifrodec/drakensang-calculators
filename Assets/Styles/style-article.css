@@ -105,11 +105,11 @@ th{
     text-align: center;
 }
 
-#result b{
+#result b, #result-long b{
     color: rgb(197, 143, 25);
 }
 
-#result,.calculator-window{
+#result,.calculator-window, #result-long{
     text-align: center;
     padding: 10px;
 }
