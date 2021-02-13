@@ -2,6 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
         <link rel="stylesheet" href="Styles/style-article.css">
         <title>Critical Value Calculator (VDC)</title>
     </head>
@@ -28,9 +29,35 @@
             <p id="res-check"></p>
         </div>
         <div class="tables">
-            <div class="table-result-window">
-                <table id="table-result">
+            <div class="table-result-window-crit">
+                <table class="rotate-table" id="table-result-crit">
                     <tr>
+                        <th>Level</th>
+                        <th id="res_level_1x1"><span>100</span></th>
+                        <th id="res_level_1x2">105</th>
+                        <th id="res_level_1x3">110</th>
+                        <th id="res_level_1x4">115</th>
+                        <th id="res_level_1x5">120</th>
+                        <th id="res_level_1x6">125</th>
+                        <th id="res_level_1x7">130</th>
+                        <th id="res_level_1x8">135</th>
+                        <th id="res_level_1x9">140</th>
+                        <th id="res_level_1x10">145</th>  
+                    </tr>
+                    <tr>
+                        <td id="cch">Critical chance</td>
+                        <th id="res_level_2x1">-</th>
+                        <th id="res_level_2x2">-</th>
+                        <th id="res_level_2x3">-</th>
+                        <th id="res_level_2x4">-</th>
+                        <th id="res_level_2x5">-</th>
+                        <th id="res_level_2x6">-</th>
+                        <th id="res_level_2x7">-</th>
+                        <th id="res_level_2x8">-</th>
+                        <th id="res_level_2x9">-</th>
+                        <th id="res_level_2x10">-</th> 
+                    </tr>
+                    <!-- <tr>
                         <th>Level</th>
                         <th id="cch">Critical chance</th>
                         <th id="ch">Critical hit</th>
@@ -84,17 +111,23 @@
                         <td id="res_10_1">145</td>
                         <td id="res_10_2">-</td>
                         <td id="res_10_3">-</td>
-                    </tr>
+                    </tr> -->
                 </table>
             </div>
             <div class="hint-table-window">
-                <table class="hint-table" id="hint-table">
-                    <tr>
+                <table class="hint-table-crit" id="hint-table">
+                    <tr id="nOutput">
                         <th>Level</th>
+                    </tr>
+                    <tr id="diffOutput">
                         <th>Difficulty</th>
                     </tr>
                 </table>
             </div>
+        </div>
+        <div class="sub-description">
+            <h3><u>Why was critical damage removed from calculator?</u></h3>
+            <p>Version v1.2.0 of critical chance calculator removed critical hit from calculator due to update of the DSO files, since critical hit is same for all difficulties (despite having critical hit data for all of the level 1 - 145). I apologize for misleading and want to thank discord user Naincarnation for highlighting this problem.</p>
         </div>
         <div class="footer">
             <footer>Created and maintained by V0ltaroo since 2021.</footer>
@@ -106,5 +139,5 @@
         </div>
     </body>
     <script src="Scripts/Constantine_v1-3-8.js"></script>
-    <script src="Scripts/crit-value-calc-engine+01.js"></script>
+    <script src="Scripts/crit-value-calc-engine-01.js"></script>
 </html>

@@ -35,6 +35,22 @@ a{
     color: rgb(197, 143, 25);
 }
 
+#table-result-crit td{
+    text-align: center;
+    padding: 0px 10px;
+    width: 80px;
+}
+
+#hint-table td{
+    text-align: center;
+    padding: 0px 10px;
+    width: 80px;
+}
+
+.table-result-window-crit{
+    padding-bottom: 10px;
+}
+
 a:hover{
     transition: 0.5s;
     /* font-size: 20px; */
@@ -55,7 +71,7 @@ table,th,td{
 #center-fix{
     padding: 0px 10px;
 }
-.table-result-window, .hint-table-window, .table-rarity-window, .table-melt-window{
+.table-result-window, .table-rarity-window, .table-melt-window{
     text-align: center;
     display: inline-block;
     clear: both;
@@ -123,10 +139,10 @@ th{
     background-color: rgb(138, 60, 8);
     border-radius: 50px;
 }
-
+/* 
 .hint-table-window{
     padding: 0px 30px;
-}
+} */
 #counter{
     float: right;
 }
@@ -135,3 +151,13 @@ th{
     height: 20px;
     margin-top: -10px;
 }
+
+@media screen and (min-width: 0px) and (max-width: 1690px) {
+
+    body{
+        margin: 0;
+        border: 0px;
+    }
+
+}
+
