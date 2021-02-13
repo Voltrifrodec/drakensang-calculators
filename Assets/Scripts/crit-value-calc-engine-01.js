@@ -13,12 +13,11 @@ var mod = 0;
 const createLegend = () => {
 
     for(let i = 0; i < array3.length; i++){
-        let row1 = getID('nOutput');
-        let td1 = row1.insertCell();
+        let row = table2.insertRow();
+        let td1 = row.insertCell();
             td1.innerHTML = `n + ${mod}`;
-        let row2 = getID('diffOutput');
-            let td2 = row2.insertCell();
-        td2.innerHTML = array3[i];
+        let td2 = row.insertCell();
+            td2.innerHTML = array3[i];
         mod += 5;
     }
 
@@ -38,11 +37,11 @@ function generateResult(){
         let notation02 = (crit * array2[level + mod] * 100).toFixed(2);
         
         let levelTD = [];
-            levelTD[i] = getID('res_level_1x' + i);
+            levelTD[i] = getID('res_' + i + '_1');
             levelTD[i].innerHTML = level + mod;
         
         let crit1TD = [];
-            crit1TD[i] = getID('res_level_2x' + i);
+            crit1TD[i] = getID('res_' + i + '_2');
             if(notation01 >= 80){
                 crit1TD[i].innerHTML = '80%';
             } else crit1TD[i].innerHTML = `${notation01}%`;
