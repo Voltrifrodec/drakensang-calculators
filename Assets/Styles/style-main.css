@@ -14,11 +14,48 @@ html{
     /* background-position: center; */
     background-size: contain;
     background-position: auto;
-       
+    scroll-behavior: smooth;
     
 }
 
+.nav a{
+    /* padding: 0 10px; */
+    margin-left: 15px;
+    display: block;
+    margin-bottom: 10px;
+    /* margin: 2px 0 0 0; */
+}
+.nav{
+    position: fixed;
+    top: 10;
+    left: 10;
+    border: 1px solid rgb(197, 143, 25);
+    padding-right: 10px;
+}
 
+.section-name img{
+    float: left;
+    width: 2vw;
+    height: 3.5vh;
+    position: fixed;
+
+}
+
+.section-name h3{
+    text-align: center;
+}
+
+/* .nav img{
+    
+    float: left;
+    margin: 0 10px;
+    position: fixed;
+    width: 2vw;
+    height: 3.5vh;
+    margin-right: 3vw;
+    float: right;
+
+} */
 
 body{
     background-color: rgb(0,0,0,0.7);
@@ -215,6 +252,10 @@ td{
     .grid-fix{
         grid-template-columns: 1 / 1;
         grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .nav{
+        display: none;
     }
 }
 
