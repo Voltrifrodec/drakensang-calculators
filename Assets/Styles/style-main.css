@@ -144,10 +144,10 @@ td{
     font-size: 30px;
     text-align: center;
 }
-.links a{
+/* .links a{
     text-decoration: underline;
     color: rgb(41, 44, 241);
-}
+} */
 .desc-table{
     margin-left: auto;
     margin-right: auto;
@@ -180,6 +180,10 @@ td{
 
 }
 
+.sub-desc{
+    
+    padding-left: 20px;
+}
 .bonus-codes .codes-part b, #note{
 
     color: red;
