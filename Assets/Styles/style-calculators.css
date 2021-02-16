@@ -1,0 +1,47 @@
+html{
+    color: white;
+    background-color: black;
+}
+
+select{
+    border: 1px solid #ffffff;
+    background: none;
+    color: white;
+}
+select option{
+    background: none;
+    color: black;
+}
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fix-window{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    width: 800px;
+    height: 600px;
+    border-radius: 2px;
+    border: 2px solid white;
+}
+
+.header{
+    text-align: center;
+    /* top: 0;
+    position: fixed;
+    */
+    margin: 40px 0; 
+    font-size: 40px;
+    overflow: hidden;
+}
+
+.calc-generator p{
+    text-align: center;
+    padding: 20px 0;
+}
