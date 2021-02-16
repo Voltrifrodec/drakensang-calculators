@@ -9,6 +9,9 @@
     <body>
         <div class="wrapper">
             <div class="fix-window">
+                <div class="nav">
+                    <a href="../welcome.html">Back to Main page</a>
+                </div>
                 <div class="header">
                     <header>Event calculator</header>
                 </div>
@@ -16,11 +19,32 @@
                     <p>Select event type and enter required data to show result.</p>
                 </div>
                 <div class="calculator">
-                    Event type:
-                    <select name="Event type">
-                        <option value="0">Select event type..</option>
-                        <option value="1">Sargon event</option>
-                    </select>
+                    <div style="text-align:center">
+                        <p>
+                            Event type: &nbsp;&nbsp;
+                            <select name="Event type" id="event-type">
+                                <option value="0">Select event type..</option>
+                                <option value="1">Sargon event</option>
+                                <!-- <option value="999">Test option</option> -->
+                            </select>
+                        </p>
+                        <p>
+                            Difficulty: &nbsp;&nbsp;
+                            <select name="Difficulty" id="difficulty">
+                                <option value="0">Select difficulty..</option>
+                                <option value="1">Normal</option>
+                                <option value="2">Painful</option>
+                                <option value="3">Excruciating</option>
+                                <option value="4">Fatal</option>
+                                <option value="5">Infernal</option>
+                                <option value="6">Merciless</option>
+                                <option value="7">Bloodshed</option>
+                            </select>
+                        </p>
+                        <p>
+                            Progress you have now: &nbsp;&nbsp;<input type="number" id="progressNow" placeholder="Current progress" value="0">
+                        </p>
+                    </div>
                     <div class="calc-generator">
                         <p id="result">Result goes here..</p>
                     </div>
@@ -39,4 +63,7 @@
             </div>
         </div>
     </body>
+    <script src="Scripts/Constantine_v1-3-8.js"></script>
+    <script src="Scripts/event-calc-engine.js"></script>
+    
 </html>
