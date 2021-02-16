@@ -16,7 +16,7 @@
                     <header>Event calculator</header>
                 </div>
                 <div class="about">
-                    <p>Select event type and enter required data to show result.</p>
+                    <p>Select event type and enter required data to show result. Note that this calculation might be inaccurate because on some events you can drop progress even from mobs or piggies or by other ways.</p>
                 </div>
                 <div class="calculator">
                     <div style="text-align:center">
@@ -30,7 +30,7 @@
                         </p>
                         <p>
                             Difficulty: &nbsp;&nbsp;
-                            <select name="Difficulty" id="difficulty">
+                            <select name="Difficulty type" id="difficulty">
                                 <option value="0">Select difficulty..</option>
                                 <option value="1">Normal</option>
                                 <option value="2">Painful</option>
@@ -42,7 +42,7 @@
                             </select>
                         </p>
                         <p>
-                            Progress you have now: &nbsp;&nbsp;<input type="number" id="progressNow" placeholder="Current progress" value="0">
+                            Progress you have now: &nbsp;&nbsp;<input type="number" id="progressNow" placeholder="Current progress" min="0" value="0">
                         </p>
                     </div>
                     <div class="calc-generator">

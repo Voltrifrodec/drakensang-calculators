@@ -3,7 +3,7 @@ html{
     background-color: black;
 }
 
-select{
+select,input{
     border: 1px solid #ffffff;
     background: none;
     color: white;
