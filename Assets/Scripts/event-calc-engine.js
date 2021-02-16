@@ -43,7 +43,7 @@ function generateOption(){
                 var differenceProg = progressBarSargonSum - progress;
                 resultDiff = Math.ceil(differenceProg / diffProgressSargon[difficulty]);
                 // }
-                result.innerHTML = `You will need to go <b style="color: orange">${numFormatDE(resultDiff)}</b> times on <b style="color: orange">${difficultyString[difficulty]}</b> to finish event (you need <b style="color: orange">${numFormatDE(differenceProg)}</b> more progress).`;
+                result.innerHTML = `You will need to go <b style="color: orange">${numFormatDE(resultDiff)}</b> times on <b style="color: orange">${difficultyString[difficulty]}</b> to finish event (you need <b style="color: orange">${numFormatDE(differenceProg)}</b> more progress). You need ${numFormatDE(resultDiff * 10)} coffee beans for finish event.`;
                 resultDiff = 0;
             }
             break;
