@@ -29,6 +29,7 @@ select option{
     height: 600px;
     border-radius: 2px;
     border: 2px solid white;
+    padding: 20px 20px 0px 20px;
 }
 
 .header{
@@ -36,12 +37,42 @@ select option{
     /* top: 0;
     position: fixed;
     */
-    margin: 40px 0; 
-    font-size: 40px;
     overflow: hidden;
+    border-bottom: 1px groove grey;
+}
+
+header{
+    margin: 20px 0; 
+    font-size: 40px;
 }
 
 .calc-generator p{
     text-align: center;
     padding: 20px 0;
+}
+.about{
+    padding: 20px;
+}
+
+.calculator{
+    padding: 0px 10%;
+}
+
+.footer{
+    width: 100%;
+    clear: both;
+    height: 20px;
+    padding: 15% 0px 10px 0px;
+    text-align: center;
+}
+
+.warning p{
+    color: red;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.about p{
+    color: orange;
+    text-align: center;
 }
