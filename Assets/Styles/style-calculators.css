@@ -16,7 +16,7 @@ select option{
 }
 
 .wrapper{
-    height: 100vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@ select option{
     align-items: center; */
     background-color: rgb(0,0,0,0.7);
     width: 800px;
-    height: 600px;
+    height: 700px;
     border-radius: 2px;
     border: 2px solid white;
     padding: 20px 20px 0px 20px;
