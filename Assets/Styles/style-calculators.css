@@ -1,6 +1,8 @@
 html{
     color: white;
-    background-color: black;
+    /* background-color: black; */
+    background: url('../Images/background_CA_2011.png') center no-repeat;
+    background-size: cover;
 }
 
 select,input{
@@ -24,7 +26,7 @@ select option{
     /* display: flex;
     justify-content: center;
     align-items: center; */
-
+    background-color: rgb(0,0,0,0.7);
     width: 800px;
     height: 600px;
     border-radius: 2px;
@@ -48,7 +50,10 @@ header{
 
 .calc-generator p{
     text-align: center;
-    padding: 20px 0;
+    /* padding: 5px 0; */
+}
+#attire-result{
+    padding: 10px 0px;
 }
 .about{
     padding: 20px;
@@ -62,7 +67,7 @@ header{
     width: 100%;
     clear: both;
     height: 20px;
-    padding: 15vw 0px 2vw 0px;
+    padding: 2vw 0px 2vw 0px;
     text-align: center;
 }
 
@@ -93,4 +98,16 @@ a:hover{
         border: none;
     }
 
+}
+
+
+::-webkit-scrollbar{
+    background-color: rgb(51, 51, 51);
+}
+::-webkit-scrollbar-button{
+    background-color:rgb(26, 26, 26);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(138, 60, 8);
+    border-radius: 50px;
 }
