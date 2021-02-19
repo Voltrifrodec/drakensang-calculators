@@ -46,7 +46,7 @@ function generateOption(){
                 // for(let i = 0; i <= progressBarsStaticSargon; i++){
                     //console.log('i[' + i + '] -> ' + progressBarsStaticSargon[i]);
                 var differenceProg = progressBarSargonSum - progress;
-                var differenceProgAttire = progressBarSargonSum - progress; 
+                var differenceProgAttire = Math.ceil((Math.ceil(progressBarSargonSum - progress) / 100) * 80); 
                 resultDiff = Math.ceil(differenceProg / diffProgressSargon[difficulty]);
                 // }
                 resultDiffAttire = Math.ceil(Math.ceil(differenceProg / diffProgressSargon[difficulty])/100 * 80);
