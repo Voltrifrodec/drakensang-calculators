@@ -1,0 +1,50 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="../Assets/Styles/style-calculators.css">
+        <link rel="shortcut icon" href="../Assets/Images/Wisdom_Icon.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wisdom calculator</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="fix-window">
+                <div class="nav">
+                    <a href="welcome.html">Back to Main page</a>
+                </div>
+                <div class="header">
+                    <header>Wisdom calculator</header>
+                </div>
+                <div class="about">
+                    <p>Enter your current level and current progress to next level to show how much wisdom you need for max level (preCE:<b style="color: white">200</b>).</p>
+                </div>
+                <div class="calculators">
+                    <div style="text-align:center">
+                        <p>
+                            Current wisdom level: &nbsp;&nbsp;
+                            <input type="number" id="level-wisdom" min="0" max="300" placeholder="Level..">
+                        </p>
+                        <p>
+                            Progress to next level: &nbsp;&nbsp;
+                            <input type="number" id="progress-next-wisdom" min="0" placeholder="Current progress..">
+                        </p>
+                    </div>
+                    <div class="calc-generator">
+                        <p id="result">Result goes here..</p>
+                    </div>
+                    <div class="footer">
+                        <footer>Created and maintained by V0ltaroo since 2021.</footer>
+                        <div>
+                            <a href="https://discord.gg/4nEFV6vrfx">Discord server</a> -
+                            <a href="welcome.html">Main page</a> - 
+                            <a href="https://github.com/Voltaroo/drakensang-calculators/">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../Assets/Scripts/Constantine_v1-3-8.js"></script>
+    <script src="../Assets/Scripts/wisdom-calc-engine.js"></script>
+</html>

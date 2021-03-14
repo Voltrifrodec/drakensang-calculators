@@ -1,0 +1,54 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="../Assets/Styles/style-calculators.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mystic cubes</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="fix-window">
+                <div class="nav">
+                    <a href="welcome.html">Back to Main page</a>
+                </div>
+                <div class="header">
+                    <header>Mystic cubes calculator</header>
+                </div>
+                <div class="about">
+                    <p>This calculator is made for fun to show what will you (approximately) drop from cubes. Select rarity of cubes and amount to show result.</p>
+                </div>
+                <div class="calculator">
+                    <div style="text-align: center;">
+                        <p>
+                            Cube tier:
+                            <select name="Cube tier" id="cube-tier">
+                                <option value="0">Select tier..</option>
+                                <option value="1">Tier 0</option>
+                                <option value="2">Tier 1</option>
+                                <option value="3">Tier 2</option>
+                                <option value="4">Tier 3</option>
+                                <option value="5">Tier 4</option>
+                            </select>
+                        </p>
+                        <p>
+                            Amount of cubes:
+                            <input type="number" id="amount-cubes" placeholder="Cube number.." min="0">
+                        </p>
+                    </div>
+                </div>
+                <div class="footer">
+                    <footer>Created and maintained by V0ltaroo since 2021.</footer>
+                    <div>
+                        <a href="https://discord.gg/4nEFV6vrfx">Discord server</a> -
+                        <a href="welcome.html">Main page</a> - 
+                        <a href="https://github.com/Voltaroo/drakensang-calculators/">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../Assets/Scripts/Constantine_v1-3-8.js"></script>
+    <script src="../Assets/Scripts/cube-reward-calc-engine.js"></script>
+    
+</html>

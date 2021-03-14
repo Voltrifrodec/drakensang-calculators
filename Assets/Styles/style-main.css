@@ -1,0 +1,266 @@
+html{
+
+    background-color: black;
+    color: white;
+    margin: 0px 10%;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    border: 3px outset rgb(197, 143, 25);
+    /* border: 10px outset rgb(197, 143, 25); */
+
+    /*? max-width na obrázok alebo 100% width do elementu ktorého sa má zmestiť BI - AVhH*/
+    background: url("../Images/background_01.png") no-repeat #000000;
+    /* background-size: cover; */
+    /* background-position: center; */
+    background-size: contain;
+    background-position: auto;
+    scroll-behavior: smooth;
+    
+}
+
+.nav a{
+    /* padding: 0 10px; */
+    margin-left: 15px;
+    display: block;
+    margin-bottom: 10px;
+    /* margin: 2px 0 0 0; */
+}
+.nav{
+    position: fixed;
+    top: 10;
+    left: 10;
+    border: 1px solid rgb(197, 143, 25);
+    padding-right: 10px;
+}
+
+.section-name img{
+    float: left;
+    width: 2vw;
+    height: 3.5vh;
+    position: fixed;
+
+}
+
+.section-name h3{
+    text-align: center;
+}
+
+/* .nav img{
+    
+    float: left;
+    margin: 0 10px;
+    position: fixed;
+    width: 2vw;
+    height: 3.5vh;
+    margin-right: 3vw;
+    float: right;
+
+} */
+
+body{
+    background-color: rgb(0,0,0,0.7);
+    /*background-image: url("../Images/background_01.png");
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-size: cover; 
+    */
+    margin: 0;
+    max-width: 100%;
+    padding: 50px 50px;
+}
+
+::-webkit-scrollbar{
+    background-color: rgb(51, 51, 51);
+}
+::-webkit-scrollbar-button{
+    background-color:rgb(26, 26, 26);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(138, 60, 8);
+    border-radius: 50px;
+}
+
+.header{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(197, 143, 25);
+}
+
+a:hover{
+    transition: 0.5s;
+    /* font-size: 20px; */
+    color: rgb(252, 213, 129);
+}
+
+.list-of-calc .u1{
+    text-decoration: none;
+    background-color: rgb(35, 190, 35);
+}
+
+.list-of-calc .u2{
+    text-decoration: none;
+    background-color: orange;
+    color: black;
+}
+
+.list-of-calc .u3{
+    text-decoration: none;
+    background-color: red;
+}
+
+.list-of-calc .u4{
+    text-decoration: none;
+    background-color: cyan;
+    color: black;
+}
+
+.list-of-calc .u5{
+    text-decoration: none;
+    background-color: gray;
+}
+
+.list-of-calc table,th,td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.calc-table div{
+    border: 3px solid rgb(87, 92, 97);
+    border-collapse: collapse;
+}
+
+.grid-fix{
+    text-align: right;
+    padding: 10px 20px;
+}
+
+.grid-fix a{
+    color: white;
+}
+.grid-fix .sub-header a{
+    font-size: 18px;
+    color:rgb(197, 143, 25);
+}
+.grid-fix .version{
+    bottom: 0;
+    float: left;
+    margin: -10;
+}
+
+.grid-fix img{
+    width: 50px;
+    /* margin-right: 60%; */
+    float: left;
+    /* display: inline-block; */
+    /* border: 3px solid black; */
+    /* vertical-align: middle; */
+}
+.calc-table{
+    display: grid;
+    grid-template-columns: auto auto auto; /** Left - Center - Right*/
+    padding: 15px;
+}
+th{
+    padding: 10px 0;
+}
+td{
+    padding: 0 10px;
+}
+.bIm{
+    color: red;
+}
+.calc-table grid-fix{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+/* .links a{
+    text-decoration: underline;
+    color: rgb(41, 44, 241);
+} */
+.desc-table{
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-top: 20px;
+
+    /* width: 100%; */
+}
+
+.desc-table th{
+    padding: 0px 10px;
+}
+
+/* .footer{
+    text-align: center;
+    margin: 5% 0px;
+} */
+
+.footer{
+    width: 100%;
+    clear: both;
+    height: 20px;
+    padding: 15% 0px 10px 0px;
+    text-align: center;
+}
+
+.bonus-codes .codes-part{
+
+    padding-left: 20px;
+
+}
+
+.sub-desc{
+    
+    padding-left: 20px;
+}
+.bonus-codes .codes-part b, #note{
+
+    color: red;
+
+}
+
+.bonus-codes #expired{
+    text-decoration: line-through;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1690px) {
+
+    html{
+        margin: 0;
+        background-position: center;
+        border: 0px;
+        color: rgb(255, 255, 255);
+        background-size: cover;
+    }
+    header{
+        font-size: 33px;
+    }
+    body{
+        background-color: rgb(0,0,0,0.7);
+    }
+    .calc-table{
+        display: inline;
+    }
+    .grid-fix{
+        grid-template-columns: 1 / 1;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .nav{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1690px) {
+    header{
+        font-size: 50px;
+    }
+}
